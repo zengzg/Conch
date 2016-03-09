@@ -1,4 +1,4 @@
-package org.zzg.chat;
+package zzg.conch;
 
 import android.content.res.Resources;
 import android.view.ViewConfiguration;
