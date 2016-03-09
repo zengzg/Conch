@@ -1,4 +1,4 @@
-package org.zzg.chat;
+package zzg.conch;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
