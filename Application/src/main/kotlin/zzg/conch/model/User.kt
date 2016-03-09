@@ -1,4 +1,4 @@
-package zzg.chat.model
+package zzg.conch.model
 
 /**
  * User information

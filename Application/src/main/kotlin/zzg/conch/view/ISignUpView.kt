@@ -1,4 +1,4 @@
-package zzg.chat.view
+package zzg.conch.view
 
 /**
  * Sign up view.

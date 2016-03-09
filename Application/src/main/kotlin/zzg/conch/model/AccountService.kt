@@ -1,4 +1,4 @@
-package zzg.chat.model
+package zzg.conch.model
 
 import com.firebase.client.Firebase
 import rx.Observable

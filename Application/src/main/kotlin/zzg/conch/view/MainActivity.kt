@@ -1,13 +1,13 @@
-package zzg.chat.view
+package zzg.conch.view
 
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
-import zzg.chat.R
-import zzg.chat.model.User
-import zzg.chat.presenter.IAccount
-import zzg.chat.presenter.impl.IAccountImpl
+import zzg.conch.R
+import zzg.conch.model.User
+import zzg.conch.presenter.IAccount
+import zzg.conch.presenter.impl.IAccountImpl
 
 class MainActivity : AppCompatActivity() {
 

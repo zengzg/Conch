@@ -1,9 +1,9 @@
-package zzg.chat
+package zzg.conch
 
 import android.app.Application
 import com.firebase.client.Firebase
-import zzg.chat.common.HttpClient
-import zzg.chat.common.Preferences
+import zzg.conch.common.HttpClient
+import zzg.conch.common.Preferences
 
 /**
  * The Android Application component.

@@ -1,4 +1,4 @@
-package zzg.chat.presenter
+package zzg.conch.presenter
 
 /**
  * This is for manage account information.

@@ -1,11 +1,11 @@
-package zzg.chat.presenter.impl
+package zzg.conch.presenter.impl
 
 import android.util.Log
 import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
-import zzg.chat.model.AccountService
-import zzg.chat.model.User
-import zzg.chat.presenter.IAccount
+import zzg.conch.model.AccountService
+import zzg.conch.model.User
+import zzg.conch.presenter.IAccount
 
 /**
  * Account manager impl.

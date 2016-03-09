@@ -1,9 +1,9 @@
-package zzg.chat.view.impl;
+package zzg.conch.view.impl;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import zzg.chat.R;
+import zzg.conch.R;
 
 public class SignUpActivity extends AppCompatActivity {
 
