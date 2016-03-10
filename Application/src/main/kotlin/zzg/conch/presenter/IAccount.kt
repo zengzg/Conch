@@ -1,5 +1,7 @@
 package zzg.conch.presenter
 
+import zzg.conch.view.ISignUpView
+
 /**
  * This is for manage account information.
  *
@@ -18,6 +20,7 @@ package zzg.conch.presenter
  * Created by 曾志刚 on 16-2-17.
  */
 interface IAccount {
+  var attachedView: ISignUpView?
 
   fun fetchUser()
 

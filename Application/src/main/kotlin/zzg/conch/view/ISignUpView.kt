@@ -21,4 +21,6 @@ interface ISignUpView {
 
   fun showSigningUpProgress()
 
+  fun dismissSigningUpProgress(message:String = "")
+
 }

@@ -24,15 +24,16 @@
         </activity>
         <activity android:name="zzg.conch.view.impl.SignUpActivity"
             android:label="@string/title_activity_sign_up">
-        </activity>
-        <activity
-            android:name="zzg.conch.view.impl.SignInActivity"
-            android:label="@string/title_activity_sign_in">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+            android:name="zzg.conch.view.impl.SignInActivity"
+            android:label="@string/title_activity_sign_in">
+
         </activity>
     </application>
 
