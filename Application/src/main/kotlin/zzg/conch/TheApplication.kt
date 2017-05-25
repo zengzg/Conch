@@ -1,6 +1,7 @@
 package zzg.conch
 
 import android.app.Application
+import android.os.Environment
 import com.firebase.client.Firebase
 import zzg.conch.common.HttpClient
 import zzg.conch.common.Preferences
@@ -22,7 +23,7 @@ class TheApplication : Application() {
     super.onCreate()
 
     // init firebase
-    Firebase.setAndroidContext(this);
+    Firebase.setAndroidContext(this)
 
     // init okhttp client.
     HttpClient.init(this)

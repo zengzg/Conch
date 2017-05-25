@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
 
 android {
     signingConfigs {
@@ -7,21 +6,21 @@ android {
             try {
                 keyAlias 'conch'
                 keyPassword KEY_PASSWORD
-                storeFile file('/home/ad/AndroidStudioProjects/Chat/app/keystore.jks')
+                storeFile file('./keystore.jks')
                 storePassword KEYSTORE_PASSWORD
-            } catch (ex) {
+            } catch (ignored) {
                 throw new InvalidUserDataException("You should define KEYSTORE_PASSWORD and KEY_PASSWORD in gradle.properties.")
             }
         }
     }
 
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
 
     defaultConfig {
         applicationId "zzg.conch"
-        minSdkVersion 15
-        targetSdkVersion 23
+        minSdkVersion 21
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
@@ -31,10 +30,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
         }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
     }
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -46,7 +41,7 @@ android {
     }
 }
 
-def support_version = '23.2.0'
+def support_version = '25.3.1'
 
 dependencies {
     testCompile 'junit:junit:4.12'
@@ -60,10 +55,10 @@ dependencies {
 
     compile 'com.squareup.picasso:picasso:2.5.2'
 
-    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
 
-    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
     compile 'io.reactivex:rxkotlin:0.40.1'
 
     compile 'com.firebase:firebase-client-android:2.5.2'
@@ -72,7 +67,7 @@ dependencies {
     compile 'com.hannesdorfmann.mosby:viewstate:2.0.0'// only if you want to use the viewstate feature
 }
 buildscript {
-    ext.kotlin_version = '1.0.0'
+    ext.kotlin_version = '1.1.2-3'
     repositories {
         mavenCentral()
     }
